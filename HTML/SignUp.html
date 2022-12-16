@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign up Page</title>
+  <style>
+      /* Write all necessery css here  */
+  </style>
+</head>
+
+<body>
+  <div class="">
+    <a href="./index.html">Signup</a>
+    <a href="./signin.html">Signin</a>
+  </div>
+  <div id="">
+    <h1>Please Enter Your Details</h1>
+    <form>
+      <input type="text" id="name">
+      <input type="email" id="email">
+      <input type="password"  id="password">
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+</body>
+<script>
+  let form = document.querySelector("form");
+  form.addEventListener("submit",function(el){
+    el.preventDefault();
+    var name = document.getElementById("name");
+    var email = document.getElementById("email");
+    var pass = document.getElementById("password");
+
+    let details = JSON.parse(localStorage.getItem("account-data")) || [];
+    if(name.value=="" || email.value == "" || pass.value == ""){
+      alert("Please enter all the fields below");
+    } else{
+      let userDetails = {
+        email: email.value,
+        pass: pass.value
+      }
+      details.push(userDetails);
+      localStorage.setItem("account-data",JSON.stringify(details));
+      alert("Sign up successful");
+    }
+  })
+
+</script>
+
+</html>
