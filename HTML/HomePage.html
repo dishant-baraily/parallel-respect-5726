@@ -4,82 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #nav-contain{
-            position: fixed;
-            /* border: 1px solid red; */
-            border-bottom: 1px solid #ededed;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 67px;
-            left: 0;
-            z-index: 999;
-            padding: 0 0 0 150px;
-            display: flex;
-        }
-        #nav-contain  img{
-            width: 100px;
-            height: 100%;
-        }
-        #nav-contain > div{
-            display: flex;
-            /* border: 1px solid yellow; */
-        }
-        #nav-contain  a{
-            display: flex;
-            font-size: 14px;
-            font-weight: bold;
-            font-family: 'Inter', sans-serif;
-            text-decoration: none;
-            /* border: 1px solid black; */
-        }
-        #nav-contain input{
-            width: 200px;
-            height: 60%;
-            background-color: #f4f4f4;
-            border: 1px solid #ebebeb;
-            border-radius: 5px;
-        }
-        .items{
-            justify-content: space-between;
-            width: 40%;
-            margin-left: 20px;
-            align-items: center;
-        }
-        .items a{
-            color: black;
-            height: 50%;
-            align-items: center;
-        }
-        .items a:hover{
-            color: #fc2779;
-        }
-        .index{
-            margin-left: 50px;
-            width: 30%;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-        .sign{
-            height: 40px; 
-            width: 80px;
-            justify-content: center;
-            background-color: #fc2779;
-            color: white;
-            border-radius: 10px;
-            align-items: center;
-        }
-        /* sidenav */
-   
-    @media screen and (min-width:10px) and (max-width:1155px) {
-       #nav-contain{
-           display: none;
-       }
-        
-    }
-    </style>
+    <title>Buy Cosmetics</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5AVmTEUo-J7l2YF-vwPb5llnYf7wqk555RQ&usqp=CAU">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../Styles/HomePage.css">
 </head>
 <body>
     <div id="nav-contain">
@@ -88,7 +19,7 @@
             I=" alt="">
         </a>
         <div class="items">
-            <a href="">Categories</a>
+            <a href="Products.html">Products</a>
             <a href="">Brands</a>
             <a href="">Luxe</a>
             <a href="">Nykaa Fashion</a>
@@ -97,13 +28,620 @@
         <div class="index">
             <input type="text">
             <a class="sign" href="SignIn.html">Sign in</a>
-            <a href="">
+            <a href="Cart.html">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.5 7.2H16.2V6.9C16.3 4.5 14.4 2.5 12 2.5C9.6 2.6 7.8 4.5 7.8 6.9V7.2H3.5C2.9 7.2 2.5 7.6 2.5 8.2V16.4C2.5 19.2 4.7 21.4 7.5 21.4H16.5C19.3 21.4 21.5 19.2 21.5 16.4V8.2C21.5 7.7 21.1 7.2 20.5 7.2ZM9.3 6.9C9.3 5.4 10.5 4.1 12 4C13.5 4.1 14.7 5.4 14.7 6.9V7.2H9.3V6.9ZM20 16.5C20 18.4 18.4 20 16.5 20H7.5C5.6 20 4 18.4 4 16.5V8.7H7.8V10.7C7.6 10.9 7.5 11.2 7.5 11.4C7.5 12 8 12.4 8.5 12.4C9 12.4 9.5 11.9 9.5 11.4C9.5 11.1 9.4 10.9 9.2 10.7V8.7H14.6V10.6C14.4 10.8 14.3 11.1 14.3 11.4C14.3 12 14.7 12.5 15.3 12.5C15.9 12.5 16.4 12.1 16.4 11.5C16.4 11.2 16.3 11 16.1 10.8V8.8H20V16.5Z" fill="black"></path></svg>
             </a>
         </div> 
     </div>
+    <div id="cat">
+        <div>
+            <a href="">Makeup</a>
+            <div class="hide">
+
+            </div>
+        </div>
+        <div>
+            <a href="">Skin</a>
+            <div class="hide">
+
+            </div>
+        </div>
+        <div>
+            <a href="">Hair</a>
+            <div class="hide">
+
+            </div>
+        </div>
+        <div>
+            <a href="">Appliances</a>
+            <div class="hide">
+
+            </div>
+        </div>
+        <div>
+            <a href="">Bath & Body</a>
+            <div class="hide">
+
+            </div>
+        </div>
+        <div>
+            <a href="">Natural</a>
+            <div class="hide">
+
+            </div>
+        </div>
+        <div>
+            <a href="">Mom & Baby</a>
+            <div class="hide">
+
+            </div>
+        </div>
+        <div>
+            <a href="">Health and Wellness</a>
+            <div class="hide">
+
+            </div>
+        </div>
+        <div>
+            <a href="">Men</a>
+            <div class="hide">
+
+            </div>
+        </div>
+        <div>
+            <a href="">Fragrance</a>
+            <div class="hide">
+
+            </div>
+        </div>
+        <div>
+            <a href="">Pop Ups</a>
+            <div class="hide">
+
+            </div>
+        </div>
+    </div>
+    <div style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px inset;width: 100%;height: 10px;"></div>
+    <div id="body">
+        <div class="slider">
+            <a id="mainA" href="">
+                <img id="mainImage" src="https://images-static.nykaa.com/uploads/4f233e0e-9182-4b1a-8850-edb8a6d448b0.jpg?tr=w-2400,cm-pad_resize">
+            </a> 
+      </div>
+      <div style="height: 40px;" ></div>
+      <div style="margin: auto;width: 90%;">
+          <img width="100%" src="https://images-static.nykaa.com/uploads/64f55a2b-022f-4205-a0a9-f818499a4a2f.jpg?tr=w-2400,cm-pad_resize" alt="">
+      </div>
+      <div style="width: 100%;background-color: #f3f3f3;">
+        <a style="display: block;width: 70%;margin: auto;" href="">
+            <img width="100%" src="https://images-static.nykaa.com/uploads/25b0b228-d583-44fa-92d2-ba1bffef0be9.png?tr=w-2400,cm-pad_resize" alt="">
+        </a>
+      </div>
+      <div style="width: 95%;margin: auto;font-family: 'Inter', sans-serif;;line-height: 10px;margin-top: 40px;">
+          <h2>Top Brands</h2>
+          <p style="color: #9a9aa4;">In The Spotlight</p>
+      </div>
+      <div class="brands">
+        <div>   
+            <div style="height: 80%;">
+                <a style="display: block; width: 100%; height: 100%;" href="">
+                <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/35ff28db-3696-47e0-8055-8640e52975e7.gif?tr=w-800,cm-pad_resize" alt=""></a>
+            </div>
+            <p style="font-size: 16px;color: black;margin-left: 20px;">On ₹2500: 1 Full-Size Gift, Pouch & Sample!</p>
+            <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">On ₹5000: 3 Gifts & 10% Discount!</p>
+        </div>
+        <div>
+            <div style="height: 80%;">
+                <a style="display: block; width: 100%; height: 100%;" href="">
+                <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/f4c15fe0-0844-44c9-b675-929c8528781a.jpg?tr=w-800,cm-pad_resize" alt=""></a>
+            </div>
+            <p style="font-size: 16px;color: black;margin-left: 20px;">Happy New Hair, From Salons to You!</p>
+            <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">Free kit on ₹1859, Mini on ₹1199</p>
+        </div>
+        <div>
+            <div style="height: 80%;">
+                <a style="display: block; width: 100%; height: 100%;" href="">
+                <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/7f5c3185-27d7-46cc-a5f9-96a65e914a07.jpg?tr=w-800,cm-pad_resize" alt=""></a>
+            </div>
+            <p style="font-size: 16px;color: black;margin-left: 20px;">Up To 40% Off</p>
+            <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">On Makeup Must-Haves!</p>
+        </div>
+        <div>
+            <div style="height: 80%;">
+                <a style="display: block; width: 100%; height: 100%;" href="">
+                <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/77a5af22-eaf4-47a6-ab62-8d01cbfa8020.jpg?tr=w-800,cm-pad_resize" alt=""></a>
+            </div>
+            <p style="font-size: 16px;color: black;margin-left: 20px;">Up To 35% Off</p>
+            <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">Brighten Up This Season with Glycolic Bright</p>
+        </div>
+        <div>
+            <div style="height: 80%;">
+                <a style="display: block; width: 100%; height: 100%;" href="">
+                <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/392d7366-8da8-4f3b-b35a-77a587f67d28.jpg?tr=w-800,cm-pad_resize" alt=""></a>
+            </div>
+            <p style="font-size: 16px;color: black;margin-left: 20px;">Up To 35% Off| Free Mini on 999+</p>
+            <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">Face Makeup for a Flawless Base!</p>
+        </div>
+        <div>
+            <div style="height: 80%;">
+                <a style="display: block; width: 100%; height: 100%;" href="">
+                <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/2535530e-e088-449b-881e-497ca7f786cd.jpg?tr=w-800,cm-pad_resize" alt=""></a>
+            </div>
+            <p style="font-size: 16px;color: black;margin-left: 20px;">The Red Lip Edit: Holiday Edition</p>
+            <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">Exciting Gifts On Your Orders!</p>
+        </div>
+        <div>
+            <div style="height: 80%;">
+                <a style="display: block; width: 100%; height: 100%;" href="">
+                <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/09fd4e48-1e16-4af8-9dd0-e09821b60194.png?tr=w-800,cm-pad_resize" alt=""></a>
+            </div>
+            <p style="font-size: 16px;color: black;margin-left: 20px;">Up To 50% Off + Free Lipstick </p>
+            <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">Worth ₹899 on ₹1199 </p>
+        </div>
+        <div>
+            <div style="height: 80%;">
+                <a style="display: block; width: 100%; height: 100%;" href="">
+                <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/42b7b2f3-1bd4-48b7-9bd8-350d4bc18279.jpg?tr=w-800,cm-pad_resize" alt=""></a>
+            </div>
+            <p style="font-size: 16px;color: black;margin-left: 20px;">Holiday Gift Sets Up To 40% off</p>
+            <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">+ Exciting Gifts On Purchase! </p>
+        </div>
+        <div>
+            <div style="height: 80%;">
+                <a style="display: block; width: 100%; height: 100%;" href="">
+                <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/697352c8-e151-4e34-87ad-2ad6d5e4ed26.jpg?tr=w-800,cm-pad_resize" alt=""></a>
+            </div>
+            <p style="font-size: 16px;color: black;margin-left: 20px;">On ₹3000: 2 Gifts</p>
+            <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">On ₹5000: Mini Liquid Matte Lipstick</p>
+        </div>
+      </div>
+      <div style="width: 95%;margin: auto;font-family: 'Inter', sans-serif;;line-height: 10px;margin-top: 40px;">
+        <h2>Discover Our Favourites</h2>
+        <p style="color: #9a9aa4;">Selection Of Our Finest 10 Products</p>
+      </div>
+      <div style="width:95%;margin:auto;">
+          <a style="display: block;width: 100%;" href="">
+              <img width="100%" style="border-radius: 8px;" src="https://images-static.nykaa.com/uploads/82eed1ab-64b2-4cb9-818b-9b39cd9284ec.jpg?tr=w-2400,cm-pad_resize" alt="">
+          </a>
+      </div>
+      <div style="background-color: #fef6f9;padding-top: 30px;margin-top: 30px;">
+          <div style="width: 95%;margin: auto;font-family: 'Inter', sans-serif;;line-height: 10px;">
+            <h2>Only At Nykaa</h2>
+            <p style="color: #9a9aa4;">Exciting Deals On Exclusive Brands</p>
+          </div>
+          <div class="brands">
+            <div style="border: 1px solid #f9bad8;">   
+                <div style="height: 80%;">
+                    <a style="display: block; width: 100%; height: 100%;" href="">
+                    <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/7738d2ca-f4a8-4d6a-9601-8946ea738d7e.png?tr=w-800,cm-pad_resize" alt=""></a>
+                </div>
+                <p style="font-size: 16px;color: black;margin-left: 20px;">On ₹2500: 1 Full-Size Gift, Pouch & Sample!</p>
+                <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">On ₹5000: 3 Gifts & 10% Discount!</p>
+            </div>
+            <div style="border: 1px solid #f9bad8;">
+                <div style="height: 80%;">
+                    <a style="display: block; width: 100%; height: 100%;" href="">
+                    <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/c12cdea1-2a3f-45e3-a01b-af1af144040c.jpg?tr=w-800,cm-pad_resize" alt=""></a>
+                </div>
+                <p style="font-size: 16px;color: black;margin-left: 20px;">Happy New Hair, From Salons to You!</p>
+                <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">Free kit on ₹1859, Mini on ₹1199</p>
+            </div>
+            <div style="border: 1px solid #f9bad8;">
+                <div style="height: 80%;">
+                    <a style="display: block; width: 100%; height: 100%;" href="">
+                    <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/6e5ebffb-5604-418b-a923-7aff98a807b5.jpg?tr=w-800,cm-pad_resize" alt=""></a>
+                </div>
+                <p style="font-size: 16px;color: black;margin-left: 20px;">Up To 40% Off</p>
+                <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">On Makeup Must-Haves!</p>
+            </div>
+            <div style="border: none;"></div>
+            <div style="border: 1px solid #f9bad8;">
+                <div style="height: 80%;">
+                    <a style="display: block; width: 100%; height: 100%;" href="">
+                    <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/a88fcfef-c647-450b-8ccc-1938cc432687.png?tr=w-800,cm-pad_resize" alt=""></a>
+                </div>
+                <p style="font-size: 16px;color: black;margin-left: 20px;">Up To 35% Off</p>
+                <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">Brighten Up This Season with Glycolic Bright</p>
+            </div>
+            <div style="border: none;"></div>
+          </div>
+      </div>
+      <div style="z-index: 1;" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <a href="">
+              <img src="https://images-static.nykaa.com/uploads/144c95cd-e1d3-4b0d-8d5a-a9ecda42e737.jpg?tr=w-480,cm-pad_resize" alt="">
+              <div class="centered"> <p>Body Lotions</p> </div></a>
+          </div>
+          <div class="swiper-slide">
+              <a href="">
+              <img src="https://images-static.nykaa.com/uploads/4ea35342-cbb3-44ef-a556-9f1c0f749d93.jpg?tr=w-480,cm-pad_resize" alt="">
+              <div class="centered"> <p>Foundations</p> </div></a>
+          </div>
+          <div class="swiper-slide">
+              <a href="">
+              <img src="https://images-static.nykaa.com/uploads/92447a8b-4cbc-4cfa-9c65-818137cbddf7.jpg?tr=w-480,cm-pad_resize" alt="">
+              <div class="centered"> <p>Bridal Makeup</p> </div></a>
+          </div>
+          <div class="swiper-slide">
+              <a href="">
+              <img src="https://images-static.nykaa.com/uploads/b21dc0cc-ff53-44e6-988c-624c0cc95c18.jpg?tr=w-480,cm-pad_resize" alt="">
+              <div class="centered"> <p>Moisturisers</p> </div></a>
+          </div>
+          <div class="swiper-slide">
+              <a href="">
+              <img src="https://images-static.nykaa.com/uploads/8d0d6d65-4c38-461a-8fa2-81c43b4e3052.jpg?tr=w-480,cm-pad_resize" alt="">
+              <div class="centered"> <p>Eyeliners & Kajals</p> </div></a>
+          </div>
+          <div class="swiper-slide">
+              <a href="">
+              <img src="https://images-static.nykaa.com/uploads/0d1737ff-11ae-42e4-95df-937ef71a752b.jpg?tr=w-480,cm-pad_resize" alt="">
+              <div class="centered"> <p>Face Sereums</p> </div></a>
+          </div>
+          <div class="swiper-slide">
+              <a href="">
+              <img src="https://images-static.nykaa.com/uploads/4162f650-31a3-4d41-a420-ac02caccce89.jpg?tr=w-480,cm-pad_resize" alt="">
+              <div class="centered"> <p>Highlighters</p> </div></a>
+          </div>
+          <div class="swiper-slide">
+              <a href="">
+                  <img src="https://images-static.nykaa.com/uploads/4162f650-31a3-4d41-a420-ac02caccce89.jpg?tr=w-480,cm-pad_resize" alt="">
+                  <div class="centered"> <p>Highlighters</p> </div>
+              </a>
+          </div>
+          <div class="swiper-slide">
+              <a href="">
+                  <img src="https://images-static.nykaa.com/uploads/7d79d30f-b511-459c-872b-2cad46a7eee6.jpg?tr=w-480,cm-pad_resize" alt="">
+                  <div class="centered"> <p>Gift Sets</p> </div>
+              </a>
+          </div>
+          <div class="swiper-slide">
+              <a href="">
+                  <img src="https://images-static.nykaa.com/uploads/abfde2f7-4d53-4e07-b9f7-4f088b801595.jpg?tr=w-480,cm-pad_resize" alt="">
+                  <div class="centered"> <p>Fragrances</p> </div>
+              </a>
+          </div>
+          <div class="swiper-slide">
+              <a href="">
+                  <img src="https://images-static.nykaa.com/uploads/b2df2716-c39d-40a7-b2a5-76c728a2590b.jpg?tr=w-480,cm-pad_resize" alt="">
+                  <div class="centered"> <p>Feminine Hygiene</p> </div>
+              </a>
+          </div>
+          <div class="swiper-slide">
+              <a href="">
+                  <img src="https://images-static.nykaa.com/uploads/8d0d6d65-4c38-461a-8fa2-81c43b4e3052.jpg?tr=w-480,cm-pad_resize" alt="">
+                  <div class="centered"> <p>Eyeliners & Kajals</p> </div>
+              </a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div style="width: 95%;margin: auto;font-family: 'Inter', sans-serif;;line-height: 10px;margin-top: 40px;">
+        <h2>Featured Brands</h2>
+        <p style="color: #9a9aa4;">Offers You Can't Miss</p>
+    </div>
+    <div class="brandsa">
+      <div style="width: 250px;height: 400px;">   
+          <div style="height: 80%;">
+              <a style="display: block; width: 100%; height: 100%;" href="">
+              <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/75e01a07-3c5d-49a7-ba57-c6e395b2e574.jpg?tr=w-480,cm-pad_resize" alt=""></a>
+          </div>
+          <p style="font-size: 16px;color: black;margin-left: 20px;">Flat 20% Off</p>
+          <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">on entire range</p>
+      </div>
+      <div style="width: 250px;height: 400px;">   
+        <div style="height: 80%;">
+            <a style="display: block; width: 100%; height: 100%;" href="">
+            <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/f168c3d3-fd10-402c-9bea-11dffcd1aa16.jpg?tr=w-480,cm-pad_resize" alt=""></a>
+        </div>
+        <p style="font-size: 16px;color: black;margin-left: 20px;">Flat 20% Off</p>
+        <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">Extra 5% off on Combos</p>
+     </div>
+     <div style="width: 250px;height: 400px;">   
+        <div style="height: 80%;">
+            <a style="display: block; width: 100%; height: 100%;" href="">
+            <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/6ba6d1e4-3547-476f-aac4-5fb740951b52.jpg?tr=w-480,cm-pad_resize" alt=""></a>
+        </div>
+        <p style="font-size: 16px;color: black;margin-left: 20px;">Pick Your Mini</p>
+        <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">On Orders ₹2000+</p>
+      </div>
+      <div style="width: 250px;height: 400px;">   
+        <div style="height: 80%;">
+            <a style="display: block; width: 100%; height: 100%;" href="">
+            <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/e14f28ae-e9c6-453c-9f27-7042a4dea28a.png?tr=w-480,cm-pad_resize" alt=""></a>
+        </div>
+        <p style="font-size: 16px;color: black;margin-left: 20px;">Up To 30% Off</p>
+        <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">Face Scrub on 799</p>
+    </div>
+    <div style="width: 250px;height: 400px;">   
+        <div style="height: 80%;">
+            <a style="display: block; width: 100%; height: 100%;" href="">
+            <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/ec18674e-691d-4610-97b2-8c93c8c7932e.png?tr=w-480,cm-pad_resize" alt=""></a>
+        </div>
+        <p style="font-size: 16px;color: black;margin-left: 20px;">Mini 20% Off</p>
+        <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">Serum of 799 on 799</p>
+    </div>
+    <div style="width: 250px;height: 400px;">   
+        <div style="height: 80%;">
+            <a style="display: block; width: 100%; height: 100%;" href="">
+            <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/672d92ee-c998-4974-8c35-cf05b671507a.jpg?tr=w-480,cm-pad_resize" alt=""></a>
+        </div>
+        <p style="font-size: 16px;color: black;margin-left: 20px;">Up To Rs.9000 Off</p>
+        <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;"></p>
+    </div>
+    <div style="width: 250px;height: 400px;">   
+        <div style="height: 80%;">
+            <a style="display: block; width: 100%; height: 100%;" href="">
+            <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/7823ffc9-53a3-4fc8-b574-04b0fd5f71e1.jpg?tr=w-480,cm-pad_resize" alt=""></a>
+        </div>
+        <p style="font-size: 16px;color: black;margin-left: 20px;">Buy 2 Get 1</p>
+        <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">on all orders</p>
+    </div>
+    <div style="width: 250px;height: 400px;">   
+        <div style="height: 80%;">
+            <a style="display: block; width: 100%; height: 100%;" href="">
+            <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/d3ef5b82-00ef-42c9-b495-aab24ad22593.jpg?tr=w-480,cm-pad_resize" alt=""></a>
+        </div>
+        <p style="font-size: 16px;color: black;margin-left: 20px;">Buy 2 Get 1 Free</p>
+        <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;"></p>
+    </div>
+    <div style="width: 250px;height: 400px;">   
+        <div style="height: 80%;">
+            <a style="display: block; width: 100%; height: 100%;" href="">
+            <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/ef6fc20b-8b41-4b58-a384-40efbd86285e.jpg?tr=w-480,cm-pad_resize" alt=""></a>
+        </div>
+        <p style="font-size: 16px;color: black;margin-left: 20px;">Up To 30% Off</p>
+        <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">+Free Detan Kit worth ₹198 on ₹599</p>
+    </div>
+    <div style="width: 250px;height: 400px;">   
+        <div style="height: 80%;">
+            <a style="display: block; width: 100%; height: 100%;" href="">
+            <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/8704e55c-524d-4949-8251-e7b2aa5b9a9e.jpg?tr=w-480,cm-pad_resize" alt=""></a>
+        </div>
+        <p style="font-size: 16px;color: black;margin-left: 20px;">Live the London Look</p>
+        <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">Starting at ₹350</p>
+    </div>
+    </div>
+    <div style="margin-top: 40px;" class="brands">
+        <div>   
+            <div style="height: 80%;">
+                <a style="display: block; width: 100%; height: 100%;" href="">
+                <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/01451526-520b-430e-ac05-ef10d02ec0b2.jpg?tr=w-800,cm-pad_resize" alt=""></a>
+            </div>
+            <p style="font-size: 16px;color: black;margin-left: 20px;">Tis the season to go all-glam!</p>
+            <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">Get 2 Minis on ₹ 5000</p>
+        </div>
+        <div>
+            <div style="height: 80%;">
+                <a style="display: block; width: 100%; height: 100%;" href="">
+                <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/85ea8f3e-4074-414d-9f24-beab5c4b381c.jpg?tr=w-800,cm-pad_resize" alt=""></a>
+            </div>
+            <p style="font-size: 16px;color: black;margin-left: 20px;">Pick 2 Bestseller Vials</p>
+            <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">On Full Size Purchases</p>
+        </div>
+        <div>
+            <div style="height: 80%;">
+                <a style="display: block; width: 100%; height: 100%;" href="">
+                <img style="border-top-right-radius: 9px;border-top-left-radius: 9px;" width="100%" height="100%" src="https://images-static.nykaa.com/uploads/d1b0aeee-6cba-4315-9635-addccee5cc7e.jpg?tr=w-800,cm-pad_resize" alt=""></a>
+            </div>
+            <p style="font-size: 16px;color: black;margin-left: 20px;">Flat 15% Off</p>
+            <p style="font-size: 14px;color: #9a9aa4;margin-left: 20px;">Up To 25% Off on Combos</p>
+        </div>
+      </div>
+      <div id="EE">
+        <div style="width: 95%;margin: auto;font-family: 'Inter', sans-serif;;line-height: 10px;margin-top: 40px;">
+            <h2>Discover Our Favourites</h2>
+            <p style="color: #9a9aa4;">Selection Of Our Finest 10 Products</p>
+          </div>
+          <div style="width: 95%;margin: auto;">
+              <a style="display: block;width: 100%;" href="">
+                  <img style="border-radius: 10px;" width="100%" src="https://images-static.nykaa.com/uploads/f6f096d9-e16d-4442-9207-b4cfe79db784.jpg?tr=w-2400,cm-pad_resize" alt="">
+              </a>
+          </div>
+          <div style="z-index: 1;" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <a style="background-color: #e4f2f4;" href="">
+                  <img src="https://images-static.nykaa.com/uploads/c59db0d6-872e-4fd1-bc64-8331897b3965.jpg?tr=w-480,cm-pad_resize" alt="">
+                  <div  class="centered"> <p>Moisturisers</p> </div></a>
+              </div>
+              <div class="swiper-slide">
+                  <a  style="background-color: #e4f2f4;" href="">
+                  <img style="border-radius: 10px;" src="https://images-static.nykaa.com/uploads/8f8b55d5-0bfc-4545-ba05-df0177672474.jpg?tr=w-480,cm-pad_resize" alt="">
+                  <div class="centered"> <p>Bath & Body</p> </div></a>
+              </div>
+              <div class="swiper-slide">
+                  <a  style="background-color: #e4f2f4;" href="">
+                  <img src="https://images-static.nykaa.com/uploads/aff3b609-5b3e-4d8c-8ccb-ad9157824b2d.jpg?tr=w-480,cm-pad_resize" alt="">
+                  <div class="centered"> <p>Face Washes</p> </div></a>
+              </div>
+              <div class="swiper-slide">
+                  <a  style="background-color: #e4f2f4;" href="">
+                  <img src="https://images-static.nykaa.com/uploads/e3424d3e-3c6f-4dd2-9cd3-d9ce46570133.jpg?tr=w-480,cm-pad_resize" alt="">
+                  <div class="centered"> <p>Budget Makeup</p> </div></a>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+      </div>
+      <div style="background-color: #ffe5eb;margin-top: -30px;" id="EE">
+        <div style="width: 95%;margin: auto;font-family: 'Inter', sans-serif;;line-height: 10px;margin-top: 40px;">
+            <h2>Stores In Focus</h2>
+          </div>
+          <div style="width: 95%;margin: auto;">
+              <a style="display: block;width: 100%;" href="">
+                  <img style="border-radius: 10px;" width="100%" src="https://images-static.nykaa.com/uploads/308b1ea9-2063-4280-a219-c0e7b7f5771e.jpg?tr=w-2400,cm-pad_resize" alt="">
+              </a>
+          </div>
+          <div style="z-index: 1;" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <a style="background-color: #ffe5eb;" href="">
+                  <img src="https://images-static.nykaa.com/uploads/f2c42fe2-c9f9-440f-8be3-3a7fb5e440c7.jpg?tr=w-480,cm-pad_resize" alt="">
+                  <div  class="centered"> <p>Makeup</p> </div></a>
+              </div>
+              <div class="swiper-slide">
+                  <a  style="background-color: #ffe5eb;" href="">
+                  <img src="https://images-static.nykaa.com/uploads/6213c0ee-b970-455a-befd-82bbdd9ed246.jpg?tr=w-480,cm-pad_resize" alt="">
+                  <div class="centered"> <p>Skin Care</p> </div></a>
+              </div>
+              <div class="swiper-slide">
+                  <a  style="background-color: #ffe5eb;" href="">
+                  <img src="https://images-static.nykaa.com/uploads/88f15a35-6e1e-4b4a-8e8f-5d90041bd286.jpg?tr=w-480,cm-pad_resize" alt="">
+                  <div class="centered"> <p>New Arrivals</p> </div></a>
+              </div>
+              <div class="swiper-slide">
+                  <a  style="background-color: #ffe5eb;" href="">
+                  <img src="https://images-static.nykaa.com/uploads/6cc4a1ac-36ab-42a9-bcf8-77fc88d0b2f9.jpg?tr=w-480,cm-pad_resize" alt="">
+                  <div class="centered"> <p>Luxe Minis</p> </div></a>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+      </div>
+      <div style="background-color: #f7e6e5; width: 90%;margin: auto;height: 100px;border-radius: 10px;margin-top: 50px;">
+        <a style="display: block;width: 100%;" href="">
+            <img width="100%" src="https://images-static.nykaa.com/uploads/49e43a50-37b5-405a-be2d-ab90055115ec.jpg?tr=w-2400,cm-pad_resize" alt="">
+        </a>
+      </div>
+      <div id="footer">
+        <div style="background-color: #f3f3f3;height: 40px;border: 1px solid white;" ></div>
+        <div style="background-color: #3e414d;height: 150px; display: flex;color: white;font-family: 'Inter', sans-serif;justify-content: space-around;align-items: center;">
+            <div>
+                Get special discount on your inbox
+            </div>
+            <div>
+                EXPERIENCE THE NYKAA MOBILE APP
+                <div style="display: flex;">
+                    <a style="display: block;width: 120px;height: 40px;" href="">
+                        <img width="100%" height="100%" style="border-radius: 5px;" src="data:image/png;base64,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" alt="">
+                    </a>
+                    <a style="display: block;width: 120px;height: 40px;" href="">
+                        <img width="100%" height="100%" style="border-radius: 8px;" src="data:image/png;base64,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" alt="">
+                    </a>
+                </div>
+            </div>
+            <div>
+                FOR ANY HELP, YOU MAY CALL US AT 1800-267-4444
+                <br>
+                (Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)
+            </div>
+        </div>
+        <div style="background-color: #8c8d93;height: 330px;">
+            <div style="display: flex;width: 70%;margin: auto; height: 100%;justify-content: space-between;color: white;font-family: 'Inter', sans-serif">
+                <div class="highlight" style="line-height: 13px;" >
+                    <h3>NYKAA</h3>
+                    <p style="font-size: 12px;">Who are we?</p>
+                    <p style="font-size: 12px;">Careers</p>
+                    <p style="font-size: 12px;">Authenticity</p>
+                    <p style="font-size: 12px;">Press</p>
+                    <p style="font-size: 12px;">Testimonials</p>
+                    <p style="font-size: 12px;">Nykaa CSR</p>
+                    <p style="font-size: 12px;">Responsible Disclosure</p>
+                    <p style="font-size: 12px;">Investor Relations</p>
+                </div>
+                <div class="highlight" style="line-height: 13px;" >
+                    <p>Help</p>
+                    <p style="font-size: 12px;">Contact Us</p>
+                    <p style="font-size: 12px;">Frequently asked questions</p>
+                    <p style="font-size: 12px;">Store Locator</p>
+                    <p style="font-size: 12px;">Cancellation & Return</p>
+                    <p style="font-size: 12px;">Shipping & Delivery</p>
+                    <p style="font-size: 12px;">Sell on Nykaa</p>
+                </div>
+                <div class="highlight" style="line-height: 13px;" >
+                    <p>Inspire Me</p>
+                    <p style="font-size: 12px;">Beauty Book</p>
+                    <p style="font-size: 12px;">Nykaa TV</p>
+                    <p style="font-size: 12px;">Nykaa Network</p>
+                    <p style="font-size: 12px;">Buying Guides</p>
+                </div>
+                <div class="highlight" style="line-height: 13px;" >
+                    <p>Quick Links</p>
+                    <p style="font-size: 12px;">Offer Zone</p>
+                    <p style="font-size: 12px;">New Launches</p>
+                    <p style="font-size: 12px;">Nykaa Man</p>
+                    <p style="font-size: 12px;">Nykaa Fashion</p>
+                    <p style="font-size: 12px;">Nykaa Pro</p>
+                </div>
+                <div class="highlight" style="line-height: 13px;" >
+                    <p>Top Categories</p>
+                    <p style="font-size: 12px;">Makeup</p>
+                    <p style="font-size: 12px;">Skin</p>
+                    <p style="font-size: 12px;">Hair</p>
+                    <p style="font-size: 12px;">Bath & Body</p>
+                    <p style="font-size: 12px;">Appliances</p>
+                    <p style="font-size: 12px;">Mom and Baby</p>
+                    <p style="font-size: 12px;">Wellness</p>
+                    <p style="font-size: 12px;">Fragrance</p>
+                    <p style="font-size: 12px;">Natural</p>
+                    <p style="font-size: 12px;">Luxe</p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div style="background-color:#fc2779; height: 100px;">
+        <div style="width: 50%;margin: auto;height: 100%;color: white;font-family: 'Inter', sans-serif;justify-content: space-around;display: flex;padding-top: 20px;" >
+            <a style="text-decoration: none;color: white;" href="">Terms & Conditions</a>
+            <a style="text-decoration: none;color: white;" href="">Shipping Policy</a>
+            <a style="text-decoration: none;color: white;" href="">Cancellation Policy</a>
+            <a style="text-decoration: none;color: white;" href="">Privacy Policy</a>
+            
+        </div>
+        <p style="margin-top: -50px;margin-left: 38%;color: white;font-family: 'Inter', sans-serif">© 2022 Nykaa E-Retail Pvt. Ltd. All Rights Reserved.</p>
+    </div>
+    </div>
 </body>
 </html>
-<script>
+<script src="../JS/HomePage.js">
+    var myImage = document.getElementById("mainImage");
+    var myA = document.getElementById("mainA");
+
+    var imageArray = [  
+        "https://images-static.nykaa.com/uploads/4f233e0e-9182-4b1a-8850-edb8a6d448b0.jpg?tr=w-2400,cm-pad_resize",
+        "https://images-static.nykaa.com/uploads/5f623509-6454-4857-9e39-b48ac1364dad.png?tr=w-2400,cm-pad_resize",
+        "https://images-static.nykaa.com/uploads/dfaa14b6-163b-442b-98e3-a3e0b4f4bf6d.jpg?tr=w-2400,cm-pad_resize",
+        "https://images-static.nykaa.com/uploads/b175e838-d143-4843-8990-a3d90c7f26a5.jpg?tr=w-2400,cm-pad_resize",
+        "https://images-static.nykaa.com/uploads/11cb1bfe-6fe8-4edf-b183-fbb6f519ba39.jpg?tr=w-2400,cm-pad_resize",
+        "https://images-static.nykaa.com/uploads/d8eed4c9-cdcc-499c-824d-311f3328a89e.jpg?tr=w-2400,cm-pad_resize",
+        "https://images-static.nykaa.com/uploads/d8c7c209-0ec1-4c12-9073-c84a7d57805e.jpg?tr=w-2400,cm-pad_resize"
+    ];
+    var imageIndex = 0;
+    function changeImage() {
+        myImage.setAttribute("src",imageArray[imageIndex]);
+        imageIndex++;
+        if (imageIndex === imageArray.length) {
+            imageIndex = 0;
+        }
+    }
+    setInterval(changeImage,3000);
+
     
+</script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 4,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 </script>

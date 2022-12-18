@@ -1,0 +1,45 @@
+body {margin:0;}
+        #nav-contain{
+            position: fixed;
+            border-bottom: 1px solid #ededed;
+            background-color: white;
+            top: 0;
+            width: 100%;
+            height: 67px;
+            z-index: 999;
+            padding-left: 650px;
+        }
+        #nav-contain > a{
+            width: 100px;
+            display: block;
+        }
+        #nav-contain > a > img{
+            width: 100%;
+            height: 100%;
+        }
+        #cart{
+            display: grid;
+            margin-top: 100px;
+            padding-left: 30px;
+            gap: 30px;
+            grid-template-columns: repeat(4,1fr);
+        }
+        #cart img{
+            width: 80%;
+            height: 50%;
+        }
+        #cart > div{
+            width: 300px;
+            background-color: white;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        #cart > div > button{
+            background-color: #fc2779;
+            color: white;
+            border-radius: 10px;
+            border: none;
+            width: 100px;
+            height: 40px;
+        }
